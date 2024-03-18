@@ -19,9 +19,8 @@ export default function Home() {
     return setData(clicksData)
   }
 
-  const handleClick = (event) => {
+  const handleClick = () => {
     console.log('clicked');
-    event.preventDefault();
     submitClick();
   };
 
