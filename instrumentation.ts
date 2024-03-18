@@ -1,5 +1,8 @@
 import { registerOTel } from '@vercel/otel';
  
 export function register() {
-  registerOTel({ serviceName: 'heikki-test-app' });
+  registerOTel({
+    serviceName: 'heikki-next-app',
+    instrumentations: [ 'fetch', 'auto' ]
+  });
 }
