@@ -2,7 +2,6 @@
 
 import { Pool, QueryResultRow } from 'pg'
 
-
 //const connectionString = 'postgresql://dbuser:secretpassword@database.server.com:3211/mydb'
 
 const connectionString = process.env.POSTGRES_URL
