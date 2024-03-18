@@ -6,7 +6,7 @@ import React from "react";
 import {Button} from "@nextui-org/react";
 
 export default function Home() {
-  const [data, setData] = useState('')
+  const [data, setData] = useState({ clicks: null })
   const [isLoading, setLoading] = useState(true)
 
   const submitClick = async() => {
@@ -46,7 +46,7 @@ export default function Home() {
           </Button>
         </p>
 	<p>
-	  Count: {data.clicks}
+	  Count: {data?.clicks}
 	</p>
       </div>
     </main>
