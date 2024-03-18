@@ -46,7 +46,7 @@ export default function Home() {
           </Button>
         </p>
 	<p>
-	  Count: {data?.clicks}
+	  Count: {data.clicks}
 	</p>
       </div>
     </main>
