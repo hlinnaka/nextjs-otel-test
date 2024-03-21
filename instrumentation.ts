@@ -14,7 +14,9 @@ export async function register() {
     
   registerInstrumentations({
     instrumentations: [
-      new PgInstrumentation(),
+      new PgInstrumentation({
+        addSqlCommenterCommentToQueries: true
+      }),
     ],
   });
 }
